@@ -34,3 +34,11 @@ This should convert the x-www-form-urlencoded'ed data to JSON.
 https://docs.mattermost.com/developer/slash-commands.html
 
 Add a slash command according to the documentation and point it at your API Gateway URL.
+
+### Verify Requests
+
+Mattermost creates a random verification token for each slash command. You can go back to your Lambda function and add it to the TOKEN constant to enable verification of incoming requests.
+
+### Get a Giphy-API Key
+
+The API-Key in the current implementation is simply the public "beta" API key from giphy. You should probably request your own API key and add it to the API_KEY constant in the Lambda function.
