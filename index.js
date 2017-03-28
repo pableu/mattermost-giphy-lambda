@@ -26,7 +26,7 @@ exports.handler = (event, context, callback) => {
 
     var decoded = qs_decode(event.body);
 
-    if (decoded.token != TOKEN) {
+    if (TOKEN !== '' && decoded.token != TOKEN) {
         callback('bad token, go away');
     }
     
