@@ -1,9 +1,9 @@
-# mattermost-giphy-lambda
+# Giphy Integration for Mattermost using AWS Lambda
 AWS Lambda Function to create a Slash-Command for Giphy-Integration in Mattermost
 
 ## Description
 
-This is pretty primitive AWS Lamba function to use with Mattermost for Giphy-Integration. It allows to create 
+This is pretty simple AWS Lamba function to use with Mattermost for Giphy-Integration. It allows to create 
 a slash-command such as "/giphy <keyword>" to post a random gif for that keyword from giphy into a channel or chat.
 
 ## Setup
