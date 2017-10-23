@@ -48,7 +48,7 @@ exports.handler = (event, context, callback) => {
                     var gif_url = giphy_result.data.images.downsized.url;
                     
                     var text = '##### [' + decoded.text + '](' + giphy_result.data.bitly_url + ")\n"
-                                + "*Posted by " + decoded.user_name + " using \\giphy " + decoded.text + "*\n"
+                                + "*Posted by " + decoded.user_name + " using /giphy " + decoded.text + "*\n"
                                 + gif_url;
                     
                     var response = {
